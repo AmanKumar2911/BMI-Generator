@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <style>
+        body {
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        form {
+            text-align: center;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-top: 5px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        #results {
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        h3 {
+            margin-top: 20px;
+        }
+
+        p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form>
+            <label for="height">Height in CM:</label>
+            <input type="text" id="height">
+            <label for="weight">Weight in KG:</label>
+            <input type="text" id="weight">
+            <button>Calculate</button>
+            <div id="results"></div>
+            <h3>BMI Weight Guide</h3>
+            <h3>Underweight: Less than 18.6</h3>
+            <p>Normal Range: 18.6 and 24.9</p>
+            <p>Overweight: Greater than 24.9</p>
+        </form>
+    </div>
+</body>
+
+<script src="script.js"></script>
+
+</html>
